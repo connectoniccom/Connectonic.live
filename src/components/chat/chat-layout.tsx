@@ -58,6 +58,8 @@ export default function ChatLayout({ expertiseLevel, uploadedFiles }: ChatLayout
         id: Date.now().toString() + 'ai',
         role: 'assistant',
         content: result.answer,
+        codeExamples: result.codeExamples,
+        diagram: result.diagram,
       };
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {

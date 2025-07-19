@@ -2,6 +2,8 @@ import { Bot, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import type { Message } from '@/lib/types';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import CodeBlock from './code-block';
+import MermaidDiagram from './mermaid-diagram';
 
 interface ChatMessageProps {
   message: Message;
@@ -26,10 +28,24 @@ export default function ChatMessage({ message }: ChatMessageProps) {
         </AvatarFallback>
       </Avatar>
       <div className={cn(
-          'p-3 rounded-lg max-w-xl text-sm whitespace-pre-wrap shadow-sm', 
+          'p-3 rounded-lg max-w-2xl text-sm shadow-sm space-y-4', 
           isAssistant ? 'bg-secondary' : 'bg-primary text-primary-foreground'
       )}>
-        {message.content}
+        <p className="whitespace-pre-wrap">{message.content}</p>
+        
+        {message.diagram && (
+          <div className="p-2 bg-background rounded-md">
+            <MermaidDiagram chart={message.diagram} />
+          </div>
+        )}
+
+        {message.codeExamples && message.codeExamples.length > 0 && (
+          <div className="space-y-2">
+            {message.codeExamples.map((example, index) => (
+              <CodeBlock key={index} language={example.language} code={example.code} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
