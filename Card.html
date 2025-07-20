@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byabasajja matayo's Blog ID Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link ref="stylesheet" href="Card.css">
+</head>
+<body>
+    <div class="card-container">
+        <!-- FRONT SIDE -->
+        <div class="card-side">
+            <div class="rotating-text" id="front-text"></div>
+            
+            <div class="decorative flower" style="top:20px; left:20px;"></div>
+            <div class="decorative emblem" style="bottom:20px; right:20px;"></div>
+            <div class="decorative rotating-bird" style="top:50%; left:50%;"></div>
+            
+            <div class="front-content">
+                <div class="uganda-header">
+                    <h1>UGANDA BLOG ID</h1>
+                    <p>Digital Creator Verification</p>
+                </div>
+                
+                <div class="id-main">
+                    <div class="id-photo-section">
+                        <div class="profile-photo" id="profile-photo">PROFILE PHOTO</div>
+                        <div class="uganda-map">UGANDA MAP</div>
+                    </div>
+                    
+                    <div class="id-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Name:</span>
+                            <span id="name-field">Alex Kamuntu</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Country:</span>
+                            <span>Uganda</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Village:</span>
+                            <span id="village-field">Nakaseke</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">County:</span>
+                            <span id="county-field">Nakaseke County</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Blog:</span>
+                            <span>ugandatravel.blog</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-grid">
+                    <div class="small-video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WDXPJWIgX-o?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="small-video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4AtJV7U3DlU?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- BACK SIDE -->
+        <div class="card-side back-side">
+            <div class="rotating-text" id="back-text"></div>
+            
+            <div class="decorative flower" style="bottom:20px; left:20px;"></div>
+            <div class="decorative emblem" style="top:20px; right:20px;"></div>
+             <div class="decorative rotating-bird" style="top:30%; left:30%;"></div>
+            <div class="decorative rotating-bird" style="bottom:30%; right:30%; animation-delay: 5s;"></div>
+            
+            <div class="back-content">
+                <div class="parents-header">
+                    <h2>PARENTAL INFORMATION</h2>
+                </div>
+                
+                <div class="parents-content">
+                    <div class="parent">
+                        <div class="parent-photo" id="father-photo">FATHER'S PHOTO</div>
+                        <div class="parent-title">FATHER</div>
+                        <div class="parent-details">
+                            <p><strong>Name:</strong> James Kamuntu</p>
+                            <p><strong>Occupation:</strong> Farmer</p>
+                            <p><strong>Village:</strong> Nakaseke</p>
+                            <button class="parent-chat-btn" id="chat-father">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Chat with Father
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="parent">
+                        <div class="parent-photo" id="mother-photo">MOTHER'S PHOTO</div>
+                        <div class="parent-title">MOTHER</div>
+                        <div class="parent-details">
+                            <p><strong>Name:</strong> Mary Kamuntu</p>
+                            <p><strong>Occupation:</strong> Teacher</p>
+                            <p><strong>Village:</strong> Nakaseke</p>
+                            <button class="parent-chat-btn" id="chat-mother">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Chat with Mother
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-grid">
+                    <div class="small-video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4AtJV7U3DlU?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="small-video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WDXPJWIgX-o?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button" id="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </div>
+
+    <!-- WhatsApp Chat Container -->
+    <div class="whatsapp-chat" id="whatsapp-chat">
+        <div class="chat-header">
+            <div class="chat-profile">
+                <img id="chat-profile-img" class="chat-profile-img" src="https://via.placeholder.com/40" alt="Profile">
+                <div class="chat-profile-info">
+                    <h4 class="chat-profile-name" id="chat-profile-name">Matayo</h4>
+                    <p class="chat-profile-status" id="chat-profile-status">Online</p>
+                    <div class="typing-indicator" id="typing-indicator">typing...</div>
+                </div>
+            </div>
+            <button class="chat-close" id="chat-close">&times;</button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <!-- Phone Number Input Modal -->
+    <div class="phone-modal" id="phone-modal">
+        <div class="phone-container">
+            <h3>WhatsApp Verification</h3>
+            <p>Please enter your WhatsApp phone number with country code:</p>
+            <input type="tel" class="phone-input" id="user-phone" placeholder="+256XXXXXXXXX">
+            <button class="phone-submit" id="phone-submit">Continue</button>
+        </div>
+      <script src="Card.js"></script>
+</body>
+</html>
