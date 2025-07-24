@@ -7,7 +7,7 @@
         
         /* Base button styling */
         .more-btn {
-            position: relative;
+            position: absolute;
             padding: 14px 28px;
             background: linear-gradient(135deg, #6e8efb, #a777e3);
             color: white;
