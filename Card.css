@@ -1,7 +1,7 @@
         /* Main container */
         .nav-container {
             display: flex;
-            justify-content: center;
+            justify-content: top;
             margin: 2rem;
         }
         
