@@ -1,9 +1,4 @@
-        /* Main container */
-        .nav-container {
-            display: flex;
-            justify-content: top;
-            margin: 2rem;
-        }
+
         
         /* Base button styling */
         .more-btn {
