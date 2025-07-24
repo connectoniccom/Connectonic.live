@@ -673,4 +673,72 @@ nav * {
   transition: background-color 0.5s ease-in-out;
 }
 
-  
+          /* Main container */
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        
+        /* Base button styling */
+        .more-btn {
+            position: relative;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
+        
+        /* Color-changing border (slower animation) */
+        .more-btn::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(90deg, 
+                #FF0000, #FF7F00, #FFFF00, #00FF00, 
+                #0000FF, #4B0082, #9400D3, #FF0000);
+            background-size: 800%;
+            border-radius: 50px;
+            z-index: -1;
+            animation: colorFlow 12s linear infinite;
+        }
+        
+        /* Continuous color flow animation */
+        @keyframes colorFlow {
+            0% { background-position: 0%; }
+            100% { background-position: 800%; }
+        }
+        
+        /* Continuous bouncing text (no hover needed) */
+        .btn-text {
+            display: inline-block;
+            animation: bounce 1s ease infinite alternate;
+        }
+        
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-5px); }
+        }
+        
+        /* Click effect */
+        .more-btn:active {
+            transform: scale(0.98);
+        }
+        
+        /* Optional: Add slight rotation to make bounce more playful */
+        @keyframes bounce {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-5px) rotate(2deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+}
