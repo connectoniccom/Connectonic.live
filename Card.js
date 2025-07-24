@@ -1,9 +1,3 @@
-const aboutBtn = document.getElementById('aboutBtn');
-        
-        aboutBtn.addEventListener('click', function() {
-            // Navigate to about page (replace with your actual link)
-            window.location.href = "index.html";
-        });
 
 // WhatsApp Configuration
         const CHAT_PROFILES = {
