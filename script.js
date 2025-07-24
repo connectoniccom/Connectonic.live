@@ -266,5 +266,10 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-
+const aboutBtn = document.getElementById('aboutBtn');
+        
+        aboutBtn.addEventListener('click', function() {
+            // Navigate to about page (replace with your actual link)
+            window.location.href = "Card.html";
+        });
                                         
