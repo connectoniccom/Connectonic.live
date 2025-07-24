@@ -318,3 +318,10 @@
             const whatsappImg = whatsappButton.querySelector('img');
             whatsappImg.src = CHAT_PROFILES.matayo.image;
         });
+
+const aboutBtn = document.getElementById('aboutBtn');
+        
+        aboutBtn.addEventListener('click', function() {
+            // Navigate to about page (replace with your actual link)
+            window.location.href = "index.html";
+        });
