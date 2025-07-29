@@ -742,3 +742,37 @@ nav * {
             50% { transform: translateY(-5px) rotate(2deg); }
             100% { transform: translateY(0) rotate(0deg); }
 }
+
+ .ad-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        
+        .video-ad {
+            width: 100%;
+            display: block;
+        }
+        
+        .download-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #6C63FF;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .download-btn:hover {
+            background-color: #5a52e0;
+            transform: translateX(-50%) translateY(-2px);
+        }
