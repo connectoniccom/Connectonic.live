@@ -273,3 +273,29 @@ const aboutBtn = document.getElementById('aboutBtn');
             window.location.href = "#";
         });
                                         
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoAd = document.querySelector('.video-ad');
+            const adContainer = document.querySelector('.ad-container');
+            
+            // Initialize Intersection Observer for autoplay
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Video is in viewport - try to play
+                        videoAd.play().catch(e => {
+                            console.log('Autoplay prevented, but video is muted so should work');
+                        });
+                    } else {
+                        // Video is not in viewport - pause
+                        if (!videoAd.paused) {
+                            videoAd.pause();
+                        }
+                    }
+                });
+            }, { 
+                threshold: 0.5,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            observer.observe(adContainer);
+        });
