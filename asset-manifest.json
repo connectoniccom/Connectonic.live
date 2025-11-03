@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Connectonic.live/static/css/main.35388824.css",
+    "main.js": "/Connectonic.live/static/js/main.37acd93b.js",
+    "static/js/453.117b0875.chunk.js": "/Connectonic.live/static/js/453.117b0875.chunk.js",
+    "index.html": "/Connectonic.live/index.html",
+    "main.35388824.css.map": "/Connectonic.live/static/css/main.35388824.css.map",
+    "main.37acd93b.js.map": "/Connectonic.live/static/js/main.37acd93b.js.map",
+    "453.117b0875.chunk.js.map": "/Connectonic.live/static/js/453.117b0875.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35388824.css",
+    "static/js/main.37acd93b.js"
+  ]
+}
