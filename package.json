@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "description": "Connectonic Music App",
+  "scripts": {
+    "dev": "next dev -p 3006",
+    "build": "NODE_OPTIONS=--max-old-space-size=4096 next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@genkit-ai/googleai": "^1.24.0",
+    "@opentelemetry/api": "^1.9.0",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-select": "^2.1.1",
+    "@radix-ui/react-separator": "^1.1.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "@types/fluent-ffmpeg": "^2.1.27",
+    "axios": "^1.13.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "firebase": "^12.1.0",
+    "firebase-admin": "^13.5.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "genkit": "^1.24.0",
+    "lucide-react": "^0.417.0",
+    "next": "^14.2.32",
+    "next-themes": "^0.3.0",
+    "node-fetch": "^3.3.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.0",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.8",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.18",
+    "@types/react-google-recaptcha": "^2.1.9",
+    "autoprefixer": "^10.4.17",
+    "eslint-config-next": "^16.0.5",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}

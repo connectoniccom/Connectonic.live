@@ -1,0 +1,21 @@
+{
+  "name": "Connectonic",
+  "short_name": "Connectonic",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "description": "Connectonic.live",
+  "icons": [
+    {
+      "src": "/loader.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/loader.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ]
+}

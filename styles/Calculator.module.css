@@ -1,0 +1,151 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #111827;
+  padding: 1rem;
+}
+
+.calculatorWrapper {
+  width: 100%;
+  max-width: 42rem;
+}
+
+.laptopFrame {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border: 14px solid #000;
+  border-radius: 1.5rem 1.5rem 0 0;
+  height: 500px;
+  width: 100%;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .laptopFrame {
+    height: 600px;
+  }
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  background-color: #1f2937;
+  border-radius: 0.75rem 0.75rem 0 0;
+  overflow-y: auto;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f2937;
+  color: #fff;
+}
+
+.cardContent {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .cardContent {
+    padding: 1.5rem;
+  }
+}
+
+.laptopBase {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #374151;
+  border-radius: 0 0 1.5rem 1.5rem;
+  height: 45px;
+  width: 95%;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.laptopBaseDetail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 0.5rem;
+}
+
+.displayWrapper {
+  background-color: #374151;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.history {
+  text-align: right;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  height: 1.5rem;
+  padding-right: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.displayInput {
+  text-align: right;
+  font-size: 2.25rem;
+  font-family: monospace;
+  height: auto;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.button {
+  /* Base button styles */
+}
+
+.colSpan2 {
+  grid-column: span 2 / span 2;
+}
+
+.unitConverter {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.unitConverterGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+  .unitConverterGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.currencyNote {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #9ca3af;
+  padding-top: 0.5rem;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Connectonic Tunnel",
+  "short_name": "Tunnel",
+  "start_url": "/tunnel",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "description": "Secure tunnel for Connectonic.",
+  "icons": [
+    {
+      "src": "/loader.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/loader.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
